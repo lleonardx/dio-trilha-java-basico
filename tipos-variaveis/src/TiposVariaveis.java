@@ -17,7 +17,5 @@ public class TiposVariaveis {
         //Para declarar a constante, deve ter a variavel em CAPS e o "final"
         final double VALOR_DE_PI = 3.14;
         System.out.println(VALOR_DE_PI);
-
-
     }
 }
