@@ -1,3 +1,4 @@
+package Automoveis;
 public abstract class Veiculo {
     private String chassi;
 

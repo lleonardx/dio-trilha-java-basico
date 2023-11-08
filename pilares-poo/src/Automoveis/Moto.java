@@ -1,3 +1,4 @@
+package Automoveis;
 public class Moto extends Veiculo {
 
     @Override

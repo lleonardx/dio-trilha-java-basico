@@ -1,3 +1,4 @@
+package Automoveis;
 public class Carro extends Veiculo {
 
     public void ligar(){
