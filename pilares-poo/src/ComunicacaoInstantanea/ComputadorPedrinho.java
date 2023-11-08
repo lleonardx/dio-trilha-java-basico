@@ -7,21 +7,17 @@ public class ComputadorPedrinho {
         /*
          * Não sei o app, mas qualquer um vai excutar.
          */
-        MSNMessenger msn = new MSNMessenger();
-        System.out.println("MSN Messenger.");
-        msn.enviarMensagem();
-        msn.receberMensagem();
-        System.out.println("");
-
-        System.out.println("Facebook Messenger.");
-        FacebookMessenger fcb = new FacebookMessenger();
-        fcb.enviarMensagem();
-        fcb.receberMensagem();
-        System.out.println("");
-
-        System.out.println("Telegram.");
-        Telegram tlg = new Telegram();
-        tlg.enviarMensagem();
-        tlg.receberMensagem();
+        String appEscolhido="tlg"; 
+		
+		if(appEscolhido.equals("msn"))
+			smi = new MSNMessenger();
+		else if(appEscolhido.equals("fbm"))
+			smi = new FacebookMessenger();
+		else if(appEscolhido.equals("tlg"))
+			smi = new Telegram();
+		
+			
+		smi.enviarMensagem();
+		smi.receberMensagem();
     }
 }
