@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta implements IConta {
     private int agencia;
     private int conta;
     private double saldo;
@@ -14,14 +14,16 @@ public class Conta {
         return saldo;
     }
 
-    //Metodos
-    public void sacar(){
 
+    //Implementação da Interface
+    public void sacar(double valor) {
+        System.out.println("");
     }
-    public void depositar(){
+    public void depositar(double valor) {
+        System.out.println("");
+    }
+    public void transferir(double valor, Conta contaDestino) {
+        System.out.println("");
+    }
 
-    }
-    public void transferir(){
-
-    }
 }
