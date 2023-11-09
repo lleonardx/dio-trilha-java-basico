@@ -7,14 +7,18 @@ public class Main {
         Conta cc = new ContaCorrente(leonardo);
         Conta pp = new ContaPoupanca(leonardo);
 
+        //Deposito
         cc.depositar(100);
+        pp.depositar(500);
         cc.imprimirExtrato();
 
+        //Extrato
         pp.imprimirExtrato();
 
         //Transferindo
         cc.transferir(100, pp);
 
+        //Extrato
         cc.imprimirExtrato();
         pp.imprimirExtrato();
     }
