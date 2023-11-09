@@ -26,13 +26,20 @@ public abstract class Conta implements IConta {
 
     //Implementação da Interface
     public void sacar(double valor) {
-        System.out.println("");
+        saldo -= valor;
     }
     public void depositar(double valor) {
-        System.out.println("");
+        saldo += valor;
     }
-    public void transferir(double valor, Conta contaDestino) {
-        System.out.println("");
+    public void transferir(double valor, IConta contaDestino) {
+        this.sacar(valor);
+        contaDestino.depositar(valor);
+    }
+
+    protected void imprimirInfoComuns() {
+        System.out.println(String.format("Agencia: %d", this.agencia));
+        System.out.println(String.format("Conta: %d", this.conta));
+        System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 
 }
